@@ -5,23 +5,63 @@
 
   <sdefs>
     <!-- Define symbol definitions within <sdef> here. -->
+    <sdef n="post"     c="Postposition"/>
     <sdef n="n"     c="Noun"/>
     <sdef n="np"     c="Noun"/>
     <sdef n="ant"     c="Noun"/>
+    <sdef n="cnjcoo"     c="Noun"/>
+    <sdef n="cnjadv"     c="Noun"/>
     <sdef n="adv"     c="Noun"/>
+    <sdef n="v"     c="Noun"/>
+    <sdef n="iv"     c="Noun"/>
+    <sdef n="cop"     c="Noun"/>
+    <sdef n="prn"     c="Noun"/>
+    <sdef n="adj"     c="Noun"/>
     <sdef n="itg"     c="Noun"/>
   </sdefs>
 
    <section id="main" type="standard">
+
+      <e><p><l>мен<s n="post"/></l><r>биле<s n="post"/></r></p></e>
+
+      <e><p><l>бірақ<s n="cnjcoo"/></l><r>ынчалза-даа<s n="cnjcoo"/></r></p></e>
+      <e><p><l>осы<b/>себептен<s n="cnjadv"/></l><r>ынчангаш<s n="cnjadv"/></r></p></e>
+
+      <e><p><l>олар<s n="prn"/></l><r>олар<s n="prn"/></r></p></e>
       <!-- Define entries within <e> here. -->
+
+      <e><p><l>алд<s n="n"/></l><r>баар<s n="n"/></r></p></e>
       <e><p><l>ат<s n="n"/></l><r>ат<s n="n"/></r></p></e>
       <e><p><l>ай<s n="n"/></l><r>ай<s n="n"/></r></p></e>
       <e><p><l>түйе<s n="n"/></l><r>теве<s n="n"/></r></p></e>
+      <e><p><l>үй<s n="n"/></l><r>бажың<s n="n"/></r></p></e>
+      <e><p><l>бақша<s n="n"/></l><r>сад<s n="n"/></r></p></e>
+      <e><p><l>дала<s n="n"/></l><r>дашты<s n="n"/></r></p></e>
+      <e><p><l>ауа<b/>райы<s n="n"/></l><r>агаар-бойдус<s n="n"/></r></p></e>
 
       <e><p><l>Азамат<s n="np"/><s n="ant"/></l><r>Азамат<s n="np"/><s n="ant"/></r></p></e>
       <e><p><l>Айгүл<s n="np"/><s n="ant"/></l><r>Айгуль<s n="np"/><s n="ant"/></r></p></e>
 
+      <e><p><l>жылы<s n="adj"/></l><r>чылыг<s n="adj"/></r></p></e>
+      <e><p><l>суық<s n="adj"/></l><r>соок<s n="adj"/></r></p></e>
+      <e><p><l>үлкен<s n="adj"/></l><r>улуг<s n="adj"/></r></p></e>
+
       <e><p><l>қайда<s n="adv"/></l><r>кайда<s n="adv"/></r></p></e>
+
+      <e><p><l>бүгін<s n="adv"/></l><r>бөгүн<s n="adv"/></r></p></e>
+      <e><p><l>кеше<s n="adv"/></l><r>дүүн<s n="adv"/></r></p></e>
+      <e><p><l>әрдайым<s n="adv"/></l><r>үргүлчү<s n="adv"/></r></p></e>
+      <e><p><l>бірге<s n="adv"/></l><r>кады<s n="adv"/></r></p></e>
+      <e><p><l>әбден<s n="adv"/></l><r>дыка<s n="adv"/></r></p></e>
+      <e><p><l>өте<s n="adv"/></l><r>дыка<s n="adv"/></r></p></e>
+      <e><p><l>жақсы<s n="adv"/></l><r>эки<s n="adv"/></r></p></e>
+
+      <e><p><l>ойна<s n="v"/><s n="iv"/></l><r>ойна<s n="v"/><s n="iv"/></r></p></e>
+      <e><p><l>е<s n="cop"/></l><r>бол<s n="v"/><s n="iv"/></r></p></e>
+
+
+
+
    </section>
 </dictionary>
 
