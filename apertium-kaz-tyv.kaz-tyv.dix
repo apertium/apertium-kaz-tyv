@@ -6,6 +6,10 @@
   <sdefs>
     <!-- Define symbol definitions within <sdef> here. -->
     <sdef n="n"     c="Noun"/>
+    <sdef n="np"     c="Noun"/>
+    <sdef n="ant"     c="Noun"/>
+    <sdef n="adv"     c="Noun"/>
+    <sdef n="itg"     c="Noun"/>
   </sdefs>
 
    <section id="main" type="standard">
@@ -13,6 +17,11 @@
       <e><p><l>ат<s n="n"/></l><r>ат<s n="n"/></r></p></e>
       <e><p><l>ай<s n="n"/></l><r>ай<s n="n"/></r></p></e>
       <e><p><l>түйе<s n="n"/></l><r>теве<s n="n"/></r></p></e>
+
+      <e><p><l>Азамат<s n="np"/><s n="ant"/></l><r>Азамат<s n="np"/><s n="ant"/></r></p></e>
+      <e><p><l>Айгүл<s n="np"/><s n="ant"/></l><r>Айгуль<s n="np"/><s n="ant"/></r></p></e>
+
+      <e><p><l>қайда<s n="adv"/></l><r>кайда<s n="adv"/></r></p></e>
    </section>
 </dictionary>
 
