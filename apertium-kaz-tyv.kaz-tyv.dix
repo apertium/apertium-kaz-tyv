@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dictionary>
-   <!-- Define the alphabet below. -->
-  <alphabet>aAáÁăảạÆbBcCčdDÐeEéèễệfFgGhHiIíjJkKlLmMnNoOóöớpPqQrRsSšştTŢuUúüưvVwWxXyYzZ</alphabet>
 
   <sdefs>
-    <!-- Define symbol definitions within <sdef> here. -->
     <sdef n="post"     c="Postposition"/>
     <sdef n="n"     c="Noun"/>
+    <sdef n="vaux"     c="Noun"/>
     <sdef n="np"     c="Noun"/>
     <sdef n="ant"     c="Noun"/>
     <sdef n="cnjcoo"     c="Noun"/>
@@ -33,16 +31,23 @@
   </sdefs>
 
    <section id="main" type="standard">
+      <!-- РАЗДЕЛ: Разные -->
 
       <e><p><l>ма<s n="qst"/></l><r>бе<s n="qst"/></r></p></e>
 
+      <!-- РАЗДЕЛ: Послелоги -->
+
       <e><p><l>мен<s n="post"/></l><r>биле<s n="post"/></r></p></e>
 
+      <!-- РАЗДЕЛ: Союзы -->
+  
       <e><p><l>бірақ<s n="cnjcoo"/></l><r>ынчалза-даа<s n="cnjcoo"/></r></p></e>
       <e><p><l>және<s n="cnjcoo"/></l><r>база<s n="cnjcoo"/></r></p></e>
       <e><p><l>ал<s n="cnjcoo"/></l><r>а<s n="cnjcoo"/></r></p></e>
       <e><p><l>осы<b/>себептен<s n="cnjadv"/></l><r>ынчангаш<s n="cnjadv"/></r></p></e>
-
+     
+      <!-- РАЗДЕЛ: Местоимение -->
+  
       <e><p><l>сен<s n="prn"/></l><r>сен<s n="prn"/></r></p></e>
       <e><p><l>ол<s n="prn"/></l><r>ол<s n="prn"/></r></p></e>
       <e><p><l>олар<s n="prn"/></l><r>олар<s n="prn"/></r></p></e>
@@ -53,10 +58,14 @@
 
       <e><p><l>не<s n="prn"/></l><r>чү<s n="prn"/></r></p></e>
 
+      <!-- РАЗДЕЛ: Числительные -->
+
       <e><p><l>бір<s n="num"/></l><r>бир<s n="num"/></r></p></e>
       <e><p><l>бес<s n="num"/></l><r>беш<s n="num"/></r></p></e>
       <e><p><l>алты<s n="num"/></l><r>алды<s n="num"/></r></p></e>
 
+      <!-- РАЗДЕЛ: Имена существительные -->
+  
       <e><p><l>алд<s n="n"/></l><r>баар<s n="n"/></r></p></e>
       <e><p><l>аст<s n="n"/></l><r>алд<s n="n"/></r></p></e>
       <e><p><l>арт<s n="n"/></l><r>арт<s n="n"/></r></p></e>
@@ -80,9 +89,13 @@
       <e><p><l>ана<s n="n"/></l><r>ие<s n="n"/></r></p></e>
       <e><p><l>терезе<s n="n"/></l><r>көзенек<s n="n"/></r></p></e>
       <e><p><l>ойын<s n="n"/></l><r>оюн<s n="n"/></r></p></e>
+    
+      <!-- РАЗДЕЛ: -->
 
       <e><p><l>Азамат<s n="np"/><s n="ant"/></l><r>Азамат<s n="np"/><s n="ant"/></r></p></e>
       <e><p><l>Айгүл<s n="np"/><s n="ant"/></l><r>Айгуль<s n="np"/><s n="ant"/></r></p></e>
+
+      <!-- РАЗДЕЛ: Имена прилагательные -->
 
       <e><p><l>жоқ<s n="adj"/></l><r>чок<s n="adj"/></r></p></e>
       <e><p><l>бар<s n="adj"/></l><r>бар<s n="adj"/></r></p></e>
@@ -93,6 +106,8 @@
       <e><p><l>үлкен<s n="adj"/></l><r>улуг<s n="adj"/></r></p></e>
       <e><p><l>ескі<s n="adj"/></l><r>эрги<s n="adj"/></r></p></e>
       <e><p><l>кішкентай<s n="adj"/></l><r>биче<s n="adj"/></r></p></e>
+
+      <!-- РАЗДЕЛ: Наречия -->
 
       <e><p><l>қайда<s n="adv"/></l><r>кайда<s n="adv"/></r></p></e>
 
@@ -106,8 +121,23 @@
       <e><p><l>қазір<s n="adv"/></l><r>ам<s n="adv"/></r></p></e>
       <e><p><l>әлбетте<s n="adv"/></l><r>бодавыже<s n="adv"/></r></p></e>
 
+      <!-- РАЗДЕЛ: -->
+
       <e><p><l>е<s n="cop"/></l><r>бол<s n="v"/><s n="iv"/></r></p></e>
 
+      <e><p><l>тур<s n="vaux"/></l><r>тур<s n="vaux"/></r></p></e>
+      <e><p><l>ал<s n="vaux"/></l><r>ал<s n="vaux"/></r></p></e>
+      <e><p><l>бер<s n="vaux"/></l><r>бер<s n="vaux"/></r></p></e>
+      <e><p><l>жат<s n="vaux"/></l><r>чыт<s n="vaux"/></r></p></e>
+      <e><p><l>көр<s n="vaux"/></l><r>көр<s n="vaux"/></r></p></e>
+      <e><p><l>отыр<s n="vaux"/></l><r>олур<s n="vaux"/></r></p></e>
+      <e><p><l>сал<s n="vaux"/></l><r>каг<s n="vaux"/></r></p></e>
+
+
+<!--      <e><p><l>бар<s n="vaux"/></l><r>бар<s n="vaux"/></r></p></e>-->
+<!--      <e><p><l>аппар<s n="vaux"/></l><r>аппар<s n="vaux"/></r></p></e>-->
+<!--      <e><p><l>чору<s n="vaux"/></l><r>чору<s n="vaux"/></r></p></e>-->
+  
       <e><p><l>тур<s n="v"/><s n="iv"/></l><r>тур<s n="v"/><s n="iv"/></r></p></e>
       <e><p><l>бол<s n="v"/><s n="iv"/></l><r>бол<s n="v"/><s n="iv"/></r></p></e>
       <e><p><l>ал<s n="v"/><s n="tv"/></l><r>ал<s n="v"/><s n="tv"/></r></p></e>
@@ -121,6 +151,8 @@
       <e><p><l>біл<s n="v"/><s n="tv"/></l><r>бил<s n="v"/><s n="tv"/></r></p></e>
       <e><p><l>сөйле<s n="v"/><s n="tv"/></l><r>сөгле<s n="v"/><s n="tv"/></r></p></e>
       <e><p><l>көр<s n="v"/><s n="tv"/></l><r>көр<s n="v"/><s n="tv"/></r></p></e>
+
+      <!-- РАЗДЕЛ: -->
 
       <e><p><l>,<s n="cm"/></l><r>,<s n="cm"/></r></p></e>
       <e><p><l>(<s n="lpar"/></l><r>(<s n="lpar"/></r></p></e>
