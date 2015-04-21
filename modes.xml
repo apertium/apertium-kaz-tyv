@@ -42,18 +42,13 @@
     </pipeline>
   </mode>
 
-  <mode name="kaz-tyv-dgen" install="no">
+  <mode name="kaz-tyv-debug" install="no">
     <pipeline>
       <program name="lt-proc -w">
         <file name="kaz-tyv.automorf.bin"/>
       </program>
-
-
-      <program name="cg-proc -w">
+      <program name="cg-proc -w -1 -n">
         <file name="kaz-tyv.rlx.bin"/>
-      </program>
-      <program name="apertium-tagger -g $2">
-        <file name="kaz-tyv.prob"/>
       </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
@@ -310,7 +305,7 @@
     </pipeline>
   </mode>
 
-  <mode name="tyv-kaz-dgen" install="no">
+  <mode name="tyv-kaz-debug" install="no">
     <pipeline>
       <program name="lt-proc -w">
         <file name="tyv-kaz.automorf.bin"/>
