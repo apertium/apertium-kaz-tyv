@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transfer default="chunk">
   <section-def-cats>
+    <def-cat n="default">
+      <cat-item tags="*"/>
+    </def-cat>
     <def-cat n="nom">
       <cat-item tags="n.*"/>
     </def-cat>
@@ -22,6 +25,32 @@
     <def-attr n="temps">
       <attr-item tags="ifi"/>
       <attr-item tags="past"/>
+    </def-attr>
+    <def-attr n="a_syn">
+      <attr-item tags="@csubj"/>
+      <attr-item tags="@cmpnd"/>
+      <attr-item tags="@amod"/>
+      <attr-item tags="@advmod"/>
+      <attr-item tags="@det"/>
+      <attr-item tags="@acl"/>
+      <attr-item tags="@acl:relcl"/>
+      <attr-item tags="@obj"/>
+      <attr-item tags="@case"/>
+      <attr-item tags="@punct"/>
+      <attr-item tags="@conj"/>
+      <attr-item tags="@cc"/>
+      <attr-item tags="@root"/>
+      <attr-item tags="@aux"/>
+      <attr-item tags="@cop"/>
+      <attr-item tags="@disc"/>
+      <attr-item tags="@nmod"/>
+      <attr-item tags="@nmod:poss"/>
+      <attr-item tags="@nummod"/>
+      <attr-item tags="@name"/>
+      <attr-item tags="@ccomp"/>
+      <attr-item tags="@advcl"/>
+      <attr-item tags="@nsubj"/>
+
     </def-attr>
   </section-def-attrs>
 
@@ -109,7 +138,29 @@
         </out>
       </action>
     </rule>
+
+
+    <rule comment="REGLA: DEFAULT">
+      <pattern>
+        <pattern-item n="default"/>
+      </pattern>
+      <action>
+        <let><clip pos="1" side="tl" part="a_syn"/><lit v=""/></let>
+        <out>
+          <chunk name="default" case="caseFirstWord">
+            <tags>
+              <tag><clip pos="1" side="sl" part="a_syn"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
   </section-rules>
+
+
 </transfer>
 
 <!--
