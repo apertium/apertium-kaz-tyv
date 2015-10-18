@@ -29,6 +29,8 @@
     <sdef n="lquot" 	c=""/> 
     <sdef n="rquot" 	c=""/> 
     <sdef n="apos" 	c=""/> 
+
+    <sdef n="dat"     c="Dative"/>
   </sdefs>
 
    <section id="main" type="standard">
@@ -116,6 +118,8 @@
       <e><p><l>Азамат<s n="np"/><s n="ant"/></l><r>Азамат<s n="np"/><s n="ant"/></r></p></e>
       <e><p><l>Айгүл<s n="np"/><s n="ant"/></l><r>Айгуль<s n="np"/><s n="ant"/></r></p></e>
       <e><p><l>Ирина<s n="np"/><s n="ant"/></l><r>Ирина<s n="np"/><s n="ant"/></r></p></e>
+      <e><p><l>Артыш<s n="np"/><s n="ant"/></l><r>Артыш<s n="np"/><s n="ant"/></r></p></e>
+      <e><p><l>Шеңне<s n="np"/><s n="ant"/></l><r>Шеңне<s n="np"/><s n="ant"/></r></p></e>
 
       <!-- РАЗДЕЛ: Имена прилагательные -->
 
@@ -130,6 +134,7 @@
       <e><p><l>үлкен<s n="adj"/></l><r>улуг<s n="adj"/></r></p></e>
       <e><p><l>ескі<s n="adj"/></l><r>эрги<s n="adj"/></r></p></e>
       <e><p><l>кішкентай<s n="adj"/></l><r>биче<s n="adj"/></r></p></e>
+      <e><p><l>жақсы<s n="adj"/></l><r>эки<s n="adj"/></r></p></e>
 
       <!-- РАЗДЕЛ: Наречия -->
 
@@ -141,12 +146,12 @@
       <e><p><l>бірге<s n="adv"/></l><r>кады<s n="adv"/></r></p></e>
       <e><p><l>әбден<s n="adv"/></l><r>дыка<s n="adv"/></r></p></e>
       <e><p><l>өте<s n="adv"/></l><r>дыка<s n="adv"/></r></p></e>
-      <e><p><l>жақсы<s n="adv"/></l><r>эки<s n="adv"/></r></p></e>
       <e><p><l>қазір<s n="adv"/></l><r>ам<s n="adv"/></r></p></e>
       <e><p><l>енді<s n="adv"/></l><r>ам<s n="adv"/></r></p></e>
       <e><p><l>әлбетте<s n="adv"/></l><r>бодавыже<s n="adv"/></r></p></e>
       <e><p><l>қайта<s n="adv"/></l><r>дагын<s n="adv"/></r></p></e>
       <e><p><l>кейін<s n="adv"/></l><r>аан<s n="adv"/></r></p></e>
+      <e><p><l>даштыгаа<s n="adv"/></l><r>дала<s n="n"/><s n="dat"/></r></p></e>
 
       <!-- РАЗДЕЛ: -->
 
