@@ -4,6 +4,9 @@
     <def-cat n="default">
       <cat-item tags="*"/>
     </def-cat>
+    <def-cat n="vaux">
+      <cat-item tags="vaux.*"/>
+    </def-cat>
     <def-cat n="nom">
       <cat-item tags="n.*"/>
     </def-cat>
@@ -22,9 +25,11 @@
     <def-attr n="a_cas">
       <attr-item tags="nom"/>
     </def-attr>
-    <def-attr n="temps">
+    <def-attr n="a_temps">
       <attr-item tags="ifi"/>
       <attr-item tags="past"/>
+      <attr-item tags="aor"/>
+      <attr-item tags="pres"/>
     </def-attr>
     <def-attr n="a_syn">
       <attr-item tags="@csubj"/>
@@ -120,10 +125,10 @@
       </pattern>
       <action>
         <choose><when><test>
-           <equal><clip pos="1" side="sl" part="temps"/>
+           <equal><clip pos="1" side="sl" part="a_temps"/>
                   <lit-tag v="ifi"/></equal>
            </test>
-           <let><clip pos="1" side="tl" part="temps"/><lit-tag v="past"/></let>
+           <let><clip pos="1" side="tl" part="a_temps"/><lit-tag v="past"/></let>
           </when>
         </choose>
         <out>
@@ -139,6 +144,29 @@
       </action>
     </rule>
 
+    <rule comment="REGLA: VAUX">
+      <pattern>
+        <pattern-item n="vaux"/>
+      </pattern>
+      <action>
+        <choose>
+          <when><test><equal><clip pos="1" side="sl" part="a_temps"/><lit-tag v="pres"/></equal></test>
+                <let><clip pos="1" side="tl" part="a_temps"/><lit-tag v="aor"/></let>
+          </when>
+        </choose>
+        <let><clip pos="1" side="tl" part="a_syn"/><lit v=""/></let>
+        <out>
+          <chunk name="default" case="caseFirstWord">
+            <tags>
+              <tag><clip pos="1" side="sl" part="a_syn"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
 
     <rule comment="REGLA: DEFAULT">
       <pattern>
