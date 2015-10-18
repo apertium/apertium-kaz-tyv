@@ -10,6 +10,10 @@
     <def-cat n="nom">
       <cat-item tags="n.*"/>
     </def-cat>
+    <def-cat n="post">
+      <cat-item tags="post"/>
+      <cat-item tags="post.*"/>
+    </def-cat>
     <def-cat n="cop">
       <cat-item tags="cop.*"/>
     </def-cat>
@@ -21,6 +25,12 @@
   <section-def-attrs>
     <def-attr n="a_ins">
       <attr-item tags="ins"/>
+    </def-attr>
+    <def-attr n="a_pers">
+      <attr-item tags="p1"/>
+      <attr-item tags="p2"/>
+      <attr-item tags="p2.frm"/>
+      <attr-item tags="p3"/>
     </def-attr>
     <def-attr n="a_cas">
       <attr-item tags="nom"/>
@@ -73,6 +83,13 @@
           <let><clip pos="1" side="tl" part="a_ins"/><concat><lit-tag v="nom"/><lit v="$ ^биле"/><lit-tag v="post"/></concat></let>
         </when>
       </choose>
+    </def-macro> 
+    <def-macro n="pers1" npar="1">
+        <choose>
+          <when><test><equal><clip pos="1" side="sl" part="a_pers"/><lit-tag v="p2.frm"/></equal></test>
+                <let><clip pos="1" side="tl" part="a_pers"/><lit-tag v="p2"/></let>
+          </when>
+        </choose>
     </def-macro> 
 
   </section-def-macros>
@@ -144,11 +161,32 @@
       </action>
     </rule>
 
+    <rule comment="REGLA: POST">
+      <pattern>
+        <pattern-item n="post"/>
+      </pattern>
+      <action>
+        <let><clip pos="1" side="tl" part="a_syn"/><lit v=""/></let>
+        <out>
+          <chunk name="post" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="POST"/></tag>
+              <tag><clip pos="1" side="sl" part="a_syn"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
     <rule comment="REGLA: VAUX">
       <pattern>
         <pattern-item n="vaux"/>
       </pattern>
       <action>
+        <call-macro n="pers1"><with-param pos="1"/></call-macro>
         <choose>
           <when><test><equal><clip pos="1" side="sl" part="a_temps"/><lit-tag v="pres"/></equal></test>
                 <let><clip pos="1" side="tl" part="a_temps"/><lit-tag v="aor"/></let>
@@ -156,7 +194,7 @@
         </choose>
         <let><clip pos="1" side="tl" part="a_syn"/><lit v=""/></let>
         <out>
-          <chunk name="default" case="caseFirstWord">
+          <chunk name="aux" case="caseFirstWord">
             <tags>
               <tag><clip pos="1" side="sl" part="a_syn"/></tag>
             </tags>
@@ -173,6 +211,7 @@
         <pattern-item n="default"/>
       </pattern>
       <action>
+        <call-macro n="pers1"><with-param pos="1"/></call-macro>
         <let><clip pos="1" side="tl" part="a_syn"/><lit v=""/></let>
         <out>
           <chunk name="default" case="caseFirstWord">

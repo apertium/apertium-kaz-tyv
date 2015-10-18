@@ -30,6 +30,10 @@
         <file name="apertium-kaz-tyv.kaz-tyv.t3x"/>
         <file name="kaz-tyv.t3x.bin"/>
       </program>
+      <program name="apertium-transfer -n">
+        <file name="apertium-kaz-tyv.kaz-tyv.t4x"/>
+        <file name="kaz-tyv.t4x.bin"/>
+      </program>
       <program name="lt-proc $1">
         <file name="kaz-tyv.autogen.bin"/>
       </program>
@@ -63,6 +67,10 @@
       <program name="apertium-postchunk">
         <file name="apertium-kaz-tyv.kaz-tyv.t3x"/>
         <file name="kaz-tyv.t3x.bin"/>
+      </program>
+      <program name="apertium-transfer -n">
+        <file name="apertium-kaz-tyv.kaz-tyv.t4x"/>
+        <file name="kaz-tyv.t4x.bin"/>
       </program>
       <program name="lt-proc -d">
         <file name="kaz-tyv.autogen.bin"/>
@@ -258,6 +266,46 @@
       </program>
     </pipeline>
   </mode>
+
+  <mode name="kaz-tyv-postchunk2" install="no">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="kaz-tyv.automorf.bin"/>
+      </program>
+
+
+      <program name="cg-proc -w">
+        <file name="kaz-tyv.rlx.bin"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="kaz-tyv.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="kaz-tyv.autobil.bin"/>
+      </program>
+      <program name="lrx-proc">
+        <file name="kaz-tyv.autolex.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-kaz-tyv.kaz-tyv.t1x"/>
+        <file name="kaz-tyv.t1x.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-kaz-tyv.kaz-tyv.t2x"/>
+        <file name="kaz-tyv.t2x.bin"/>
+      </program>
+      <program name="apertium-postchunk">
+        <file name="apertium-kaz-tyv.kaz-tyv.t3x"/>
+        <file name="kaz-tyv.t3x.bin"/>
+      </program>
+      <program name="apertium-transfer -n">
+        <file name="apertium-kaz-tyv.kaz-tyv.t4x"/>
+        <file name="kaz-tyv.t4x.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
 
   <!-- tyv → kaz -->
 
