@@ -20,6 +20,7 @@
     <sdef n="adj"     c="Noun"/>
     <sdef n="itg"     c="Noun"/>
     <sdef n="qst"     c="Noun"/>
+    <sdef n="postadv" c="Postadverb"/>
     <sdef n="guio" 	c=""/> 
 
     <sdef n="cm" 	c=""/> 
@@ -46,6 +47,7 @@
   
       <e><p><l>бірақ<s n="cnjcoo"/></l><r>ынчалза-даа<s n="cnjcoo"/></r></p></e>
       <e><p><l>және<s n="cnjcoo"/></l><r>база<s n="cnjcoo"/></r></p></e>
+      <e><p><l>да<s n="postadv"/></l><r>база<s n="cnjcoo"/></r></p></e>
       <e><p><l>ал<s n="cnjcoo"/></l><r>а<s n="cnjcoo"/></r></p></e>
       <e><p><l>осы<b/>себептен<s n="cnjadv"/></l><r>ынчангаш<s n="cnjadv"/></r></p></e>
      
@@ -112,6 +114,8 @@
       <e><p><l>ел<s n="n"/></l><r>улус<s n="n"/></r></p></e><!-- "nation, country" -->
       <e><p><l>музыка<s n="n"/></l><r>хөгжүм<s n="n"/></r></p></e><!-- "music" -->
       <e><p><l>марапат<s n="n"/></l><r>шаңнал<s n="n"/></r></p></e><!-- "prize" -->
+      <e><p><l>жауап<s n="n"/></l><r>харыы<s n="n"/></r></p></e><!-- "answer/response" -->
+      <e><p><l>ана<s n="n"/></l><r>ава<s n="n"/></r></p></e><!-- "mother" -->
     
       <!-- РАЗДЕЛ: -->
 
@@ -189,6 +193,9 @@
       <e><p><l>ата<s n="v"/><s n="tv"/></l><r>ада<s n="v"/><s n="tv"/></r></p></e>
       <e><p><l>өйрен<s n="v"/><s n="tv"/></l><r>өөрен<s n="v"/><s n="tv"/></r></p></e>
       <e><p><l>өт<s n="v"/><s n="iv"/></l><r>эрт<s n="v"/><s n="iv"/></r></p></e>
+      <e><p><l>жет<s n="v"/><s n="iv"/></l><r>чет<s n="v"/><s n="iv"/></r></p></e><!-- "reach" -->
+      <e><p><l>күлімсіре<s n="v"/><s n="iv"/></l><r>хүлүмзүр<s n="v"/><s n="iv"/></r></p></e><!-- "smile" -->
+      <e><p><l>жыми<s n="v"/><s n="iv"/></l><r>хүлүмзүр<s n="v"/><s n="iv"/></r></p></e><!-- "smile" -->
 
       <!-- РАЗДЕЛ: -->
 
