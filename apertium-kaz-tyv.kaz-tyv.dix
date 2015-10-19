@@ -17,6 +17,7 @@
     <sdef n="cop"     c="Noun"/>
     <sdef n="prn"     c="Noun"/>
     <sdef n="det"     c="Noun"/>
+    <sdef n="coll"    c="Noun"/>
     <sdef n="adj"     c="Noun"/>
     <sdef n="itg"     c="Noun"/>
     <sdef n="qst"     c="Noun"/>
@@ -79,6 +80,8 @@
       <e><p><l>бес<s n="num"/></l><r>беш<s n="num"/></r></p></e>
       <e><p><l>алты<s n="num"/></l><r>алды<s n="num"/></r></p></e>
 
+      <e><p><l>екеу<s n="num"/><s n="coll"/></l><r>иелээн<s n="num"/><s n="coll"/></r></p></e>
+
       <!-- РАЗДЕЛ: Имена существительные -->
   
       <e><p><l>алд<s n="n"/></l><r>баар<s n="n"/></r></p></e>
@@ -91,6 +94,7 @@
       <e><p><l>ай<s n="n"/></l><r>ай<s n="n"/></r></p></e>
       <e><p><l>ағаш<s n="n"/></l><r>ыяш<s n="n"/></r></p></e>
       <e><p><l>көз<s n="n"/></l><r>карак<s n="n"/></r></p></e>
+      <e><p><l>уақыт<s n="n"/></l><r>үе<s n="n"/></r></p></e>
       <e><p><l>мысық<s n="n"/></l><r>диис<s n="n"/></r></p></e>
       <e><p><l>түйе<s n="n"/></l><r>теве<s n="n"/></r></p></e>
       <e><p><l>адам<s n="n"/></l><r>кижи<s n="n"/></r></p></e>
