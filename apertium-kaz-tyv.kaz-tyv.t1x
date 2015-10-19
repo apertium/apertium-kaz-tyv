@@ -7,6 +7,9 @@
     <def-cat n="vaux">
       <cat-item tags="vaux.*"/>
     </def-cat>
+    <def-cat n="cop-past">
+      <cat-item tags="cop.ifi.*"/>
+    </def-cat>
     <def-cat n="nom">
       <cat-item tags="n.*"/>
     </def-cat>
@@ -23,6 +26,12 @@
   </section-def-cats>
 
   <section-def-attrs>
+    <def-attr n="a_verb">
+      <attr-item tags="vaux"/>
+      <attr-item tags="cop"/>
+      <attr-item tags="v.tv"/>
+      <attr-item tags="v.iv"/>
+    </def-attr>
     <def-attr n="a_ins">
       <attr-item tags="ins"/>
     </def-attr>
@@ -136,9 +145,9 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: COP">
+    <rule comment="REGLA: COP-PAST">
       <pattern>
-        <pattern-item n="cop"/>
+        <pattern-item n="cop-past"/>
       </pattern>
       <action>
         <choose><when><test>
@@ -148,10 +157,15 @@
            <let><clip pos="1" side="tl" part="a_temps"/><lit-tag v="past"/></let>
           </when>
         </choose>
+
+        <call-macro n="pers1"><with-param pos="1"/></call-macro>
+        <let><clip pos="1" side="tl" part="a_syn"/><lit v=""/></let>
+        <let><clip pos="1" side="tl" part="a_verb"/><lit-tag v="v.iv"/></let>
+        <let><clip pos="1" side="tl" part="lem"/><lit v="бол"/></let>
         <out>
-          <chunk name="sent" case="caseFirstWord">
+          <chunk name="cop" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SENT"/></tag>
+              <tag><clip pos="1" side="sl" part="a_syn"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
@@ -160,6 +174,7 @@
         </out>
       </action>
     </rule>
+
 
     <rule comment="REGLA: POST">
       <pattern>
