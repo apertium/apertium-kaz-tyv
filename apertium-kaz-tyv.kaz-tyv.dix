@@ -20,6 +20,8 @@
     <sdef n="coll"    c="Noun"/>
     <sdef n="adj"     c="Noun"/>
     <sdef n="itg"     c="Noun"/>
+    <sdef n="qnt"     c="Noun"/>
+    <sdef n="ind"     c="Noun"/>
     <sdef n="qst"     c="Noun"/>
     <sdef n="postadv" c="Postadverb"/>
     <sdef n="guio" 	c=""/> 
@@ -73,6 +75,8 @@
       <e><p><l>не<s n="prn"/></l><r>чү<s n="prn"/></r></p></e>
 
       <e><p><l>ешнәрсе<s n="prn"/></l><r>чүү-даа<s n="prn"/></r></p></e>
+
+      <e><p><l>бір<b/>нәрсе<s n="prn"/><s n="ind"/></l><r>чүве<s n="n"/></r></p></e> <!-- FIXME: Check -->
 
       <!-- РАЗДЕЛ: Числительные -->
 
@@ -143,6 +147,7 @@
       <e><p><l>бар<s n="adj"/></l><r>бар<s n="adj"/></r></p></e>
 
       <e><p><l>керек<s n="adj"/></l><r>херек<s n="adj"/></r></p></e>
+      <e><p><l>керек<s n="adj"/></l><r>ужурлуг<s n="adj"/></r></p></e>
       <e><p><l>мүмкін<s n="adj"/></l><r>чадавас<s n="adj"/></r></p></e> <!-- магатчок, чадапчок, ыйнаан --> 
 
       <e><p><l>жас<s n="adj"/></l><r>харлыг<s n="adj"/></r></p></e> <!-- CHECK -->
