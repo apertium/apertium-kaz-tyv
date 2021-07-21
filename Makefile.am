@@ -230,11 +230,4 @@ clean-local:
 ###############################################################################
 
 test: all
-	echo "house" | apertium -d . kaz-tyv | tee .test-mt
-	@echo "house" > .test-ref
-	@diff .test-ref .test-mt
-	echo "house" | apertium -d . tyv-kaz | tee .test-mt
-	@echo "house" > .test-ref
-	@diff .test-ref .test-mt
-	@rm .test-ref .test-mt
-
+	apertium-regtest test

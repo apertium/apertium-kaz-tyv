@@ -1,0 +1,10 @@
+{
+    "kaz-tyv": {
+        "input": "kaz-tyv-input.txt",
+        "mode": "kaz-tyv"
+    },
+    "tyv-kaz": {
+        "input": "tyv-kaz-input.txt",
+        "mode": "tyv-kaz"
+    }
+}
